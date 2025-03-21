@@ -66,7 +66,7 @@ export default function Footer() {
                         <textarea
                             id="project"
                             name="project"
-                            rows="3"
+                            rows={3}
                             className="mt-1 w-full bg-transparent border-b border-gray-500 focus:border-white focus:outline-none text-white placeholder-gray-400 resize-none"
                             placeholder=""
                             aria-label="Your project is about"
