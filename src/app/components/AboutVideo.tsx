@@ -5,7 +5,7 @@ import { useState, useRef } from 'react';
 const PolygonVideoPlayer = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isPolygonVisible, setIsPolygonVisible] = useState(true); // State for polygon visibility
-    const videoRef = useRef(null);
+    const videoRef = useRef<HTMLVideoElement>(null); // Properly type the videoRef
 
     // Handle polygon click
     const handlePolygonClick = () => {
@@ -13,7 +13,7 @@ const PolygonVideoPlayer = () => {
         setIsPlaying(true); // Start playing the video
         setIsPolygonVisible(false); // Hide the polygon
         if (videoRef.current) {
-            videoRef.current.play();
+            videoRef.current.play(); // Now TypeScript knows videoRef.current is an HTMLVideoElement
         }
     };
 
@@ -23,7 +23,7 @@ const PolygonVideoPlayer = () => {
         setIsPlaying(false); // Pause the video
         setIsPolygonVisible(true); // Show the polygon
         if (videoRef.current) {
-            videoRef.current.pause();
+            videoRef.current.pause(); // Now TypeScript knows videoRef.current is an HTMLVideoElement
         }
     };
 
