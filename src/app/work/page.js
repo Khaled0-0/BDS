@@ -50,8 +50,8 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className='bg-black py-[120px] px-[48px]'>
-
+            <section className='bg-black py-[120px] px-[48px] text-white'>
+                khaled features
             </section>
         </>
     );
