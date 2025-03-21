@@ -23,7 +23,7 @@ export default function HomePage() {
                         <div className='mt-[70px]'>
                             <h1 className='text-white text-[172px] font-normal leading-[180px]'>Beyond Digital Solutions.</h1>
                             <p className='pt-20 px-50 text-white text-[32px] font-normal leading-[50px]'>
-                                At BDS, we're more than just a design agency—we're your creative companions on the journey to design excellence.
+                                At BDS, were more than just a design agency—were your creative companions on the journey to design excellence.
                             </p>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ export default function HomePage() {
                     </div>
                     <div className='max-w-[660px]'>
                         <h2 className='text-[40px] text-black '>
-                            Our mission is to turn your dreams into reality, one pixel at a time. With a diverse team of designers, developers, and innovators, we're constantly pushing the boundaries of what's possible in the digital world.
+                            Our mission is to turn your dreams into reality, one pixel at a time. With a diverse team of designers, developers, and innovators, were constantly pushing the boundaries of whats possible in the digital world.
                         </h2>
                         <p className='mt-8 text-[24px] text-black font-bold'>
                             ABOUT BDS
@@ -212,7 +212,7 @@ export default function HomePage() {
                             >PR & Community Management</h1>
                             <p
                                 className='text-[#E8E8E8] text-[24px] max-w-[800px] leading-8'
-                            >Elevate your brand identity with ArtistryLab. We understand the importance of a strong brand, and we'll help you establish a unique and unforgettable one.</p>
+                            >Elevate your brand identity with ArtistryLab. We understand the importance of a strong brand, and well help you establish a unique and unforgettable one.</p>
                         </div>
                     </div>
                     {/* service 6 */}
@@ -229,13 +229,13 @@ export default function HomePage() {
                             >Website development</h1>
                             <p
                                 className='text-[#E8E8E8] text-[24px] max-w-[800px] leading-8'
-                            >Elevate your brand identity with ArtistryLab. We understand the importance of a strong brand, and we'll help you establish a unique and unforgettable one.</p>
+                            >Elevate your brand identity with ArtistryLab. We understand the importance of a strong brand, and well help you establish a unique and unforgettable one.</p>
                         </div>
                     </div>
                     <div className='flex items-end justify-between mt-25'>
                         <p
                             className='text-[32px] strong text-[#FFFFFF] w-[950px] font-normal'
-                        >Our services are more than just solutions, they're opportunities to transform your digital presence and achieve your business objectives. We're here to make your digital dreams a reality.</p>
+                        >Our services are more than just solutions, theyre opportunities to transform your digital presence and achieve your business objectives. Were here to make your digital dreams a reality.</p>
                         <h2
                             className='text-[#ABD5DE] underline font-bold '
                         >VIEW ALL SERVICES</h2>

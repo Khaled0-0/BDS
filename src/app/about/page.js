@@ -18,7 +18,7 @@ export default function About() {
                     <p
                         className='font-normal text-[24px] text-[#E8E8E8] w-[80%]'
                     >
-                        Our mission is to turn your dreams into reality, one pixel at a time. With a diverse team of designers, developers, and innovators, we're constantly pushing the boundaries of what's possible in the digital world.
+                        Our mission is to turn your dreams into reality, one pixel at a time. With a diverse team of designers, developers, and innovators, were constantly pushing the boundaries of whats possible in the digital world.
 
                     </p>
                 </div>
@@ -32,7 +32,7 @@ export default function About() {
                     <div className='flex flex-col gap-[32px]'
                     >
                         <p className='text-[#010202] font-normal text-[48px]'
-                        >We're here to make your design dreams come true.
+                        >Were here to make your design dreams come true.
                         </p>
                         <AboutVideo />
                     </div>
