@@ -59,7 +59,7 @@ export default function Page() {
                 </div>
                 <div className='text-white grid grid-cols-2 gap-5'>
                     <div>
-                        <Image src={'/p1.png'} width={648} height={230} alt='' />
+                        <Image src={'/m.jpg'} width={648} height={230} alt='' />
                         <p className='pt-[32px]'>Cryptozy</p>
                     </div>
                     <div>
