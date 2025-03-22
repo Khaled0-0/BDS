@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import NavBar from '../components/NavBar'; // Import NavBar
+import Footer from '../components/Footer';
 
 export default function Page() {
     return (
         <>
+            {/* section 1  */}
             <section className="relative h-[80vh] w-full">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
@@ -50,9 +52,38 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className='bg-black py-[120px] px-[48px]'>
-
+            {/* section 2 */}
+            <section className='bg-black py-[120px] px-[48px] '>
+                <div className='pb-[80px]'>
+                    <h1 className='text-[#ffffff] text-[96px] font-normal'>All Projects</h1>
+                </div>
+                <div className='text-white grid grid-cols-2 gap-5'>
+                    <div>
+                        <Image src={'/p1.png'} width={648} height={230} alt='' />
+                        <p className='pt-[32px]'>Cryptozy</p>
+                    </div>
+                    <div>
+                        <Image src={'/p2.png'} width={978} height={648} alt='' />
+                        <p className='pt-[32px]'>Sportly</p>
+                    </div>
+                </div>
+                <div className='py-[48px]'>
+                    <Image src={'/p3.png'} width={1383} height={1726} alt='' />
+                    <p>Palma Estate</p>
+                </div>
+                <div className='text-[#ffffff] grid grid-cols-2 gap-[48px]'>
+                    <div>
+                        <Image src={'/p4.png'} width={648} height={230} alt='' />
+                        <p className='pt-[32px]'>Homezy</p>
+                    </div>
+                    <div>
+                        <Image src={'/p5.png'} width={978} height={648} alt='' />
+                        <p className='pt-[32px]'>Weave Inc</p>
+                    </div>
+                </div>
             </section>
+            {/* footer */}
+            <Footer />
         </>
     );
 }
