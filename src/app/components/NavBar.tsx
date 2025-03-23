@@ -11,15 +11,17 @@ export default function NavBar() {
     // Determine the background and text color based on the pathname
     const getBackgroundAndTextColor = () => {
         if (pathname === '/' || pathname === '/work') {
-            return 'bg-transparent'; // Transparent background for home and work pages
-        } else if (pathname === '/about') {
-            return 'bg-black text-white'; // Black background for the About page
-        } else if (pathname === '/services') {
-            return 'bg-red-500 text-white'; // Red background for the Services page
+            return { bg: 'bg-transparent', text: 'text-white' }; // Transparent background and white text for home and work pages
+        } else if (pathname === '' || pathname === '/services') {
+            return { bg: 'bg-white', text: 'text-black' }; // White background and black text for About and Services pages
+        } else if (pathname === '/touch' || pathname === '/walet') {
+            return { bg: 'bg-white', text: 'text-black', }; // White background and black text for Touch and Walet pages
         } else {
-            return 'bg-black text-white'; // Black background for all other pages
+            return { bg: 'bg-black', text: 'text-white' }; // Default to black background and white text for other pages
         }
     };
+
+    const { bg, text } = getBackgroundAndTextColor();
 
     const handleScrollToEnd = () => {
         window.scrollTo({
@@ -44,7 +46,7 @@ export default function NavBar() {
             )}
 
             {/* NavBar content */}
-            <div className={`flex items-center px-10 relative z-10 pt-[32px] ${getBackgroundAndTextColor()}`}>
+            <div className={`flex items-center px-10 relative z-10 pt-[32px] ${bg} ${text}`}>
                 <div className='mr-auto'>
                     <Link href={'/'}>
                         <Image src={"/logo.png"} alt="logo" width={100} height={100} />
@@ -53,23 +55,40 @@ export default function NavBar() {
                 <div>
                     <ul className='flex gap-12 items-center justify-center'>
                         <Link href={'/about'}>
-                            <li className={pathname === '/about' ? 'text-white' : 'text-white'}>About</li>
+                            <li className={text}>About</li>
                         </Link>
                         <Link href={'/work'}>
-                            <li className={pathname === '/work' ? 'text-white' : 'text-white'}>Work</li>
+                            <li className={text}>Work</li>
                         </Link>
                         <Link href={'/services'}>
-                            <li className={pathname === '/services' ? 'text-white' : 'text-white'}>Services</li>
+                            <li className={text}>Services</li>
+                        </Link>
+                        <Link href={'/walet'}>
+                            <li className={text}>Walet</li>
+                        </Link>
+                        <Link href={'/touch'}>
+                            <li className={text}>Touch</li>
                         </Link>
                         <button
                             onClick={handleScrollToEnd}
-                            className='flex items-center justify-center border border-white cursor-pointer rounded-full px-4 py-2 text-white '
-                        >GET IN TOUCH
-                            <Image src={"/right-arrow.png"} alt="" width={20} height={20} className="ml-2 " />
+                            className={`flex items-center justify-center border ${pathname === '/walet' || pathname === '/touch' ? 'border-black' :
+                                pathname === '/services' ? 'border-black' : 'border-white'
+                                } cursor-pointer rounded-full px-4 py-2 ${text} hover:opacity-80 transition-opacity duration-300`}
+                        >
+                            GET IN TOUCH
+                            <Image
+                                src={"/right-arrow.png"}
+                                alt=""
+                                width={20}
+                                height={20}
+                                className={`ml-2 ${pathname === '/walet' || pathname === '/touch' ? 'filter invert' : ''
+                                    }`}
+                            />
                         </button>
                         <button
-                            className='cursor-pointer rounded-full px-4 py-2 text-white '
-                        >translate
+                            className={`cursor-pointer rounded-full px-4 py-2 ${text} hover:opacity-80 transition-opacity duration-300`}
+                        >
+                            translate
                         </button>
                     </ul>
                 </div>

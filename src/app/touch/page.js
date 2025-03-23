@@ -5,7 +5,7 @@ export default function page() {
     return (
         <div>
             <NavBar />
-            services page
+            touch page
         </div>
     )
 }
