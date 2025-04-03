@@ -19,7 +19,7 @@ const PolygonVideoPlayer = () => {
 
     // Handle video click
     const handleVideoClick = () => {
-        console.log("Video clicked!");
+        // console.log("Video clicked!");
         setIsPlaying(false); // Pause the video
         setIsPolygonVisible(true); // Show the polygon
         if (videoRef.current) {

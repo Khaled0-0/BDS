@@ -17,11 +17,13 @@ export default function HomePage() {
                 <section className="h-screen">
                     <NavBar /> {/* Include NavBar here */}
                     <video autoPlay muted loop className="video-background">
-                        <source src="/background2.mp4" type="video/mp4" />
+                        <source src={"/background1.mp4"} type="video/mp4" />
                     </video>
                     <div className="content">
                         <div className='mt-[70px]'>
-                            <h1 className='text-white text-[172px] font-normal leading-[180px]'>Beyond Digital Solutions.</h1>
+                            <h1 className='text-white lg:text-[172px] md:text-[30px] font-normal leading-[180px]'>
+                                Beyond Digital Solutions.
+                            </h1>
                             <p className='pt-20 px-50 text-white text-[32px] font-normal leading-[50px]'>
                                 At BDS, were more than just a design agency—were your creative companions on the journey to design excellence.
                             </p>
@@ -130,8 +132,7 @@ export default function HomePage() {
                 <section className='bg-black  w-auto  py-[112px] px-[48px]'>
                     {/* service 1 */}
                     <div
-                        className='flex gap-10  justify-center'
-                    >
+                        className='flex gap-10  justify-center'>
                         <Image src={"/setting.png"} width={255} height={255} alt='' />
                         <span
                             className='text-[#E8E8E8] pt-5'
@@ -247,13 +248,9 @@ export default function HomePage() {
                         <h1
                             className='text-[88px] w-[500px] leading-20 font-normal'
                         >Our clients experiences</h1>
-                        <div
-                            className='flex flex-col gap-[56px] '
-                        >
+                        <div className='flex flex-col gap-[56px] '>
                             <Image src={"/avatar.png"} alt="" width={200} height={200} />
-                            <p
-                                className='w-[662px] leading-8 text-[32px]'
-                            >
+                            <p className=' leading-8 text-[32px]'>
                                 I had the pleasure of working with BDS on a recent project, and I was blown away by their creativity and attention to detail. I highly recommend BDS for anyone looking for a talented and professional designers.
                             </p>
                             <p className='text-[24px]'>
@@ -263,7 +260,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </section>
-            </main>
+            </main >
             <footer>
                 {/* Footer content */}
                 <Footer />

@@ -15,7 +15,7 @@ export default function Footer() {
         } else if (pathname === '/work') {
             return { bg: 'bg-white', text: 'text-black', buttonBg: 'bg-black', buttonText: 'text-white' }; // Work page
         } else if (pathname === '/services') {
-            return { bg: 'bg-red-500', text: 'text-white', buttonBg: 'bg-black', buttonText: 'text-white' }; // Services page
+            return { bg: 'bg-black', text: 'text-white', buttonBg: 'bg-black', buttonText: 'text-white' }; // Services page
         } else {
             return { bg: 'bg-black', text: 'text-white', buttonBg: 'bg-white', buttonText: 'text-black' }; // Default
         }

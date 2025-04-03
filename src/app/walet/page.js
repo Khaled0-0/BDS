@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import Image from 'next/image';
+import Footer from '../components/Footer';
 
 export default function Page() {
     return (
@@ -146,7 +147,7 @@ export default function Page() {
             <section className='p-[120px]'>
                 <div className='flex flex-col gap-[64px]'>
                     <div className='text-center'>
-                        <p className='text-[#010202] text-[48px] font-normal w-[1200px]'>
+                        <p className='text-[#010202] text-[48px] font-normal'>
                             I had the pleasure of working with Ivan on a recent project, and I was blown away by their creativity and attention to detail. I highly recommend BDS for anyone looking for a talented and professional designer.
                         </p>
                     </div>
@@ -166,6 +167,139 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+            {/* s9 */}
+            <section className='px-[48px] pb-[120px] flex flex-col gap-[32px]'>
+                <div className='w-full'>
+                    <Image src={'/p9.png'} width={1500} height={756} alt='' />
+                </div>
+                <div className='flex justify-between'>
+                    <div className='pt-[50px] pr-[50px] bg-[#DAF727]'>
+                        <Image src={'/p11.png'} width={500} height={800} alt='' />
+                    </div>
+                    <div className='pt-[65px] px-[48px] pb-[101.01px] bg-black'>
+                        <Image src={'/p10.png'} width={500} height={800} alt={''} />
+                    </div>
+                </div>
+                <div className='pt-[96px] flex justify-center'>
+                    <button className='w-[216px] h-[70px] rounded-[100px] border border-black 
+                    text-[#010202] text-[18px] font-semibold px-[32px] py-[24px]'>VISIT WEBSITE</button>
+                </div>
+            </section>
+            {/* s10 */}
+            <section className='px-[48px] py-[120px] flex flex-col gap-[48px]'>
+                <h1 className='font-normal text-[96px] text-[#010202] w0[713px]'>
+                    What&apos;s nexts?
+                </h1>
+                <div className='flex gap-[29px] w-[1344px] items-start'>
+                    <div className='w-[30%] '>
+                        <h2 className='text-[#010202] text-[56px] font-normal '>
+                            Weave Inc.
+                        </h2>
+                    </div>
+                    <div className='flex flex-col gap-[48px] items-start'>
+                        <p className='text-[#696A6E] text-[24px] font-normal mt-[15px]'>
+                            Weave is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div className='grid grid-cols-3 gap-3'>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'>
+                                Branding Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                Website Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                App Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                Development
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='flex gap-[29px] w-[1344px] items-start'>
+                    <div>
+                        <Image src={'/p12.png'} width={753} height={300} alt={''} />
+                    </div>
+                    <div className=' flex flex-col gap-[48px]'>
+                        <div className='flex gap-[29px]'>
+                            <div>
+                                <h2 className='text-[#010202] text-[56px] font-normal '>
+                                    Cryptozy
+                                </h2>
+                            </div>
+                            <div className='flex flex-col gap-[48px] items-start'>
+                                <p className='text-[#696A6E] text-[24px] font-normal mt-[15px]'>
+                                    Weave is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='flex gap-3'>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'>
+                                Branding Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                Website Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                App Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                Development
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='flex gap-[29px] w-[1344px] items-start'>
+                    <div className='w-[30%] '>
+                        <h2 className='text-[#010202] text-[56px] font-normal '>
+                            Estatery
+                        </h2>
+                    </div>
+                    <div className='flex flex-col gap-[48px] items-start'>
+                        <p className='text-[#696A6E] text-[24px] font-normal mt-[15px]'>
+                            Weave is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div className='grid grid-cols-3 gap-3'>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'>
+                                Branding Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                Website Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                App Design
+                            </button>
+                            <button
+                                className='w-[162px] rounded-[100px] border border-black text-[#010202] text-[15px] font-semibold p-[16px]'
+                            >
+                                Development
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <Footer />
         </>
     );
 }
